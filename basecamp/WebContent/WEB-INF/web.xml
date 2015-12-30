@@ -43,28 +43,12 @@
 	<!-- 서블릿 선언 -->
 	<servlet>
 		<servlet-name>AppInitServlet</servlet-name>
-		<servlet-class>spms.servlets.AppInitServlet</servlet-class>
+		<servlet-class>basecamp.servlets.AppInitServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
-	<servlet>
-		<servlet-name>LogInServlet</servlet-name>
-		<servlet-class>spms.servlets.LogInServlet</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>LogOutServlet</servlet-name>
-		<servlet-class>spms.servlets.LogOutServlet</servlet-class>
-	</servlet>
 	<!-- 서블릿을 URL과 연결 -->
-  <servlet-mapping>
-  	<servlet-name>LogInServlet</servlet-name>
-  	<url-pattern>/auth/login</url-pattern>	
-  </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>LogOutServlet</servlet-name>
-  	<url-pattern>/auth/logout</url-pattern>	
-  </servlet-mapping>
+  
 	<welcome-file-list>
-		<welcome-file>messageList.jsp</welcome-file>
 		<welcome-file>index.htm</welcome-file>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
